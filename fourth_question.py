@@ -11,5 +11,7 @@ from stun import get_ip_info
 def getMyExternalIp():
  return get_ip_info()[1]
 
-my_external_ip = getMyExternalIp()
-print(f'Мой текущий публичный IP: {my_external_ip}')
+
+if __name__ == '__main__':
+    my_external_ip = getMyExternalIp()
+    print(f'Мой текущий публичный IP: {my_external_ip}')
